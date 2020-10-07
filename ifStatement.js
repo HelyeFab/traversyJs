@@ -32,6 +32,28 @@ if (typeof book === 'undefined') {
     console.log(book);
 }
 
+// IF ELSE
+
+let color = 'green';
+
+if (color == 'red') {
+    console.log(`Color is ${color}`);
+} else if (color == 'yellow') {
+    console.log(`Color is ${color}`);
+} else {
+    console.log(`Color is neither red or yellow`);
+}
+
+// --------LOGICAL OPERATORS--------
 
 
+let name = "Steve";
+let age = 11;
 
+if (age > 0 && age <= 12) {
+    console.log (`${name} is a child`)
+} else if (age >=13 && age <= 19) {
+    console.log(`${name} is a teen`)
+} else {
+    console.log(`${name} is an  adult`)
+}
