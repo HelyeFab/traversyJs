@@ -21,7 +21,7 @@ const square = function (x) {
 console.log(square(8));
 
 
-// -----------IMMEDIATELY INVOKABLE FUNCTION EXPRESSIONS   IIFEs-----------
+// -----------IMMEDIATELY INVOCABLE FUNCTION EXPRESSIONS   IIFEs-----------
 
 (function () {
     console.log('IIFE executed');

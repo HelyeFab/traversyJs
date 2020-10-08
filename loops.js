@@ -48,10 +48,42 @@ for (i=0; i<myColors.length; i++){
 // ----------- LOOPING THROUGH ARRAYS (using arrays methods)-----------
 const myNotes = ['Do','Re','Mi','Fa','Sol'];
 
-myNotes.forEach(function(note){
-console.log(note);
+myNotes.forEach(function(note,index, array){
+console.log(`${note} : ${index} : ${array}`);
 
+});
+
+// Map
+const users = [
+    {
+        id: 1,
+        name: 'John'
+    },
+    {
+        id: 2,
+        name: 'Mark'
+    },
+    {
+        id: 3,
+        name: 'Ann'
+    },
+];
+
+const ids = users.map(function (user) {
+    return user.id
+});
+
+console.log(ids);
+
+// FOR IN
+const user = {
+    firstName: 'William',
+    lastName: 'King',
+    age: 48
+      
 }
-    
-);
 
+for (let i in user) {
+    console.log(i);  // This will give the key of each key-value pair
+    console.log(`${i} : ${user[i]}`); // This will give the key-value pair for each item in the object
+}
