@@ -33,7 +33,15 @@ liOdd.forEach(function (li, index) {
     li.style.color = '#eee';  
 });
 
-liEven.forEach(function (li, index) {
-    li.style.background = '#e63946';
-    li.style.color = '#eee';
-});
+// liEven.forEach(function (li, index) {
+//     li.style.background = '#e63946';
+//     li.style.color = '#eee';
+// });
+
+//? USING A FOR LOOP INSTEAD
+
+for (i = 0; i < liEven.length; i++){
+    liEven[i].style.background = '#e63946';
+    liEven[i].style.color = '#eee';
+}
+
